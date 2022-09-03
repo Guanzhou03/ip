@@ -109,6 +109,7 @@ public class Storage {
     public void readAndProcessFile() {
         this.handleFile(FILE);
         try {
+            assert FILE.exists();
             Scanner myReader = new Scanner(FILE);
             this.loadFileInput(myReader);
         } catch (FileNotFoundException e) {

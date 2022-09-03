@@ -124,6 +124,7 @@ public class Parser {
                 }
                 return result;
             default:
+                assert false; //should not reach here
                 return result;
             }
 
